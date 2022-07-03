@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>send message template</title>
+  <style>
+    .parent {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .child {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    }
+    .segment {
+      margin: 5px 0;
+      padding: 0 20px;
+    }
+    p {
+      padding: 3px 0;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <form method="post" action="/" enctype="application/x-www-form-urlencoded">
+    <div class="parent">
+      <div class="child">
+      <div class="segment">
+        <p>
+          <label for="to"> TO: </label>
+        </p>
+        <p>
+          <input name="to" id="to"/>
+        </p>
+      </div>
+      <div class="segment">
+        <p>
+          <label for="message"> Message: </label>
+        </p>
+        <p>
+          <input name="message" id="message" />
+        </p>
+      </div>
+      <div class="segment">
+        <button type="submit">Submit</button>
+      </div>
+    </div>
+  </div>
+  </form>
+
+  
+</body>
+</html>
